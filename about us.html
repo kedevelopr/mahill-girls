@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>githumu senior school | Excellence in Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .blue-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); }
+    </style>
+
+    <style>
+        #backToTop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* 20px from the bottom */
+  right: 20px; /* 20px from the right */
+  z-index: 99; /* Sit on top of everything */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #1e3a8a; /* Your Theme Blue */
+  color: white; /* Arrow color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Make it a circle */
+  font-size: 18px; /* Increase font size */
+  width: 50px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+#backToTop:hover {
+  background-color: #3b82f6; /* Lighter blue on hover */
+  transform: translateY(-5px); /* Slight lift effect */
+}
+</style>
+     
+<style>
+     @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .animate-spin-slow {
+    animation: spin-slow 8s linear infinite;
+  }
+
+
+  
+  
+
+
+     .second-sect {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f1f5f9; /* A light, neutral background */
+            color: #1e293b; /* Darker text for readability */
+            padding: 2rem;
+        }
+        .profile-card {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 42rem;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;}
+        /* Mobile-friendly curve: less extreme on small screens */
+        .curved-edge {
+            border-radius: 0 0 0 100px;
+        }
+        @media (min-width: 768px) {
+            .curved-edge {
+                border-bottom-left-radius: 50% 100%;
+                border-top-left-radius: 50% 100%;
+            }
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .road-map{
+    width:100%;
+    margin:auto;
+    padding-top:30px;
+}
+.route iframe{
+width: 100%;
+}
+    </style>
+
+
+</head>
+<body class="bg-slate-50 font-sans text-gray-800">
+
+    <nav class="sticky top-0 z-50 bg-white shadow-md border-b-4 border-red-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+            <div class="flex items-center">
+                <span class="text-2xl font-black tracking-tighter text-blue-900">
+                    MARYHILL GIRLS <span class="text-red-800">HIGH</span>
+                </span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="text-slate-700 hover:text-blue-900 font-bold transition">Home</a>
+                <a href="about us.html" class="text-slate-700 hover:text-blue-900 font-bold transition">About Us</a>
+                <a href="school life.html" class="text-slate-700 hover:text-blue-900 font-bold transition">School Life</a>
+                
+                <a href="https://complex-trial.vercel.app" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-red-800 transition-all duration-300 shadow-lg font-bold">
+                    Holiday Assignment
+                </a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-blue-900 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-50 px-4 pt-2 pb-6 space-y-2 shadow-inner border-t border-blue-100">
+        <a href="index.html" class="block py-3 text-blue-900 border-b border-blue-100 font-bold">Home</a>
+        <a href="about us.html" class="block py-3 text-blue-900 border-b border-blue-100 font-bold">About Us</a>
+        <a href="school life.html" class="block py-3 text-blue-900 border-b border-blue-100 font-bold">School Life</a>
+        
+        <div class="pt-4">
+            <a href="https://complex-trial.vercel.app" class="block text-center bg-red-800 text-white py-3 rounded-lg font-bold shadow-md">
+                Holiday Assignment
+            </a>
+        </div>
+    </div>
+</nav>
+    <section class="w-full bg-stone-50">
+  <div class="max-w-full mx-auto flex flex-col md:flex-row items-stretch justify-between overflow-hidden bg-white shadow-sm border-b border-gray-200 min-h-[60vh]">
+    
+    <div class="w-full md:w-1/2 p-8 md:p-16 lg:p-24 flex flex-col justify-center space-y-6">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-blue-900">
+        About Us
+      </h2>
+      <div class="space-y-2">
+        <p class="text-2xl md:text-3xl font-semibold text-red-800 tracking-wide uppercase">
+          Maryhill Girls High School
+        </p>
+        <p class="text-lg text-gray-600 leading-relaxed max-w-md">
+          A premier national institution dedicated to the holistic empowerment of the girl child through academic excellence and spiritual integrity.
+        </p>
+      </div>
+      <div>
+        <button class="mt-4 px-8 py-3 bg-blue-900 text-white font-bold uppercase tracking-widest rounded-md hover:bg-red-800 transition duration-300 shadow-lg">
+          Explore Our Heritage
+        </button>
+      </div>
+    </div>
+
+    <div class="w-full md:w-1/2 relative">
+      <img 
+        src="pictures/ma9.jpg" 
+        alt="Maryhill Girls High School Students" 
+        class="w-full h-full object-cover min-h-[350px] md:min-h-full"
+      />
+      <div class="absolute inset-0 bg-red-900/10 mix-blend-multiply"></div>
+    </div>
+
+  </div>
+</section>
+    
+<section class="py-16 px-4 md:px-12 lg:px-24 bg-stone-50">
+  <div class="max-w-7xl mx-auto text-center mb-16">
+    <h1 class="text-3xl md:text-5xl font-serif font-bold text-blue-900 uppercase tracking-tight mb-4">
+      Welcome to our School
+    </h1>
+    <p class="text-lg md:text-xl text-red-800 font-medium">
+      Explore our comprehensive curriculum and learn all these subjects
+    </p>
+    <div class="w-24 h-1 bg-red-800 mx-auto mt-6"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto space-y-16">
+    
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+      <div class="bg-blue-900 p-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase">8-4-4 Curriculum Subjects</h2>
+      </div>
+      <div class="p-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">English</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Kiswahili</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Mathematics</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Biology</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Physics</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Chemistry</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">C.R.E</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">History</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Geography</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Homescience</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Agriculture</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Music</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">German / French</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Business</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Computer Studies</span>
+          </div>
+          <div class="flex items-center space-x-2 p-3 bg-blue-50/30 rounded-lg border border-red-800/10 hover:border-red-800 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-red-800"></span>
+            <span class="text-sm md:text-base font-semibold text-blue-900">Art & Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+      <div class="bg-red-800 p-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase">Senior School (CBC) Pathways</h2>
+      </div>
+      <div class="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="space-y-4">
+          <h3 class="font-bold text-blue-900 border-b border-red-800 pb-2 uppercase text-sm tracking-wider">STEM & Technical Track</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Core / Essential Maths</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Physics, Chemistry, Biology</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> ICT & Computer Studies</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Electricity & Power Mechanics</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Building & Construction</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="font-bold text-blue-900 border-b border-red-800 pb-2 uppercase text-sm tracking-wider">Humanities & Languages</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> English & Kiswahili</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Literature & Fasihi</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> C.R.E, History, Geography</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> German / French</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Community Service Learning (CSL)</li>
+          </ul>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="font-bold text-blue-900 border-b border-red-800 pb-2 uppercase text-sm tracking-wider">Arts & Applied Sciences</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Applied Agriculture</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Homescience</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Fine Art / Theatre & Film</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Music & Dance</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Physical Education</li>
+            <li class="flex items-center text-sm"><span class="mr-2 text-red-800">▸</span> Business Studies</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-stone-50 py-12 px-6 md:py-20 md:px-12 lg:px-24">
+  <div class="max-w-7xl mx-auto space-y-20 md:space-y-32">
+    
+    <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-20">
+      <div class="w-full md:w-1/2 space-y-5 order-2 md:order-1">
+        <span class="text-red-800 font-semibold tracking-widest uppercase text-sm">Our Heritage</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-blue-900 uppercase tracking-tight">
+          Brief History
+        </h2>
+        <div class="w-20 h-1 bg-red-800"></div>
+        <p class="text-gray-700 leading-relaxed text-lg text-justify">
+          Maryhill Girls High School, a premier National school located in Thika, has long stood as a beacon of academic excellence and holistic empowerment for the girl child. Established by the Sisters of Our Lady of Africa, the school has remained dedicated to nurturing disciplined, visionary young women. With a strong foundation in spiritual integrity and academic rigor, Maryhill has evolved into a leading institution known for its consistent top-tier performance and its vibrant presence in the community.
+        </p>
+      </div>
+      <div class="w-full md:w-1/2 flex justify-center order-1 md:order-2">
+        <div class="relative group">
+          <div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 relative z-10">
+            <img 
+              src="pictures/ma9.jpg" 
+              alt="Maryhill Girls Campus" 
+              class="w-full h-full object-cover rounded-full border-8 border-white shadow-2xl"
+            />
+          </div>
+          <div class="absolute -top-4 -right-4 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-red-800/20 rounded-full -z-0"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center gap-10 lg:gap-20">
+      <div class="w-full md:w-1/2 flex justify-center">
+        <div class="relative group">
+          <div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 relative z-10">
+            <img 
+              src="pictures/ma9.jpg" 
+              alt="Mission and Vision" 
+              class="w-full h-full object-cover rounded-full border-8 border-white shadow-2xl"
+            />
+          </div>
+          <div class="absolute -bottom-4 -left-4 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-blue-900/10 rounded-full -z-0"></div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 space-y-5">
+        <span class="text-red-800 font-semibold tracking-widest uppercase text-sm">Our Purpose</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-blue-900 uppercase tracking-tight">
+          Our Mission
+        </h2>
+        <div class="w-20 h-1 bg-blue-900"></div>
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-sm border-l-4 border-red-800">
+          <p class="text-gray-700 italic text-xl md:text-2xl leading-relaxed">
+            "To provide a holistic and quality education that empowers the girl child to realize her full potential for service to God and humanity."
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-stone-50 py-16 px-6 md:py-24 md:px-12 lg:px-24 overflow-hidden">
+  <div class="max-w-7xl mx-auto relative">
+    
+    <div class="absolute -top-6 -left-6 w-32 h-32 bg-red-800 rounded-lg hidden md:block -z-10 shadow-lg"></div>
+    <div class="absolute -bottom-8 -right-8 w-64 h-64 bg-blue-900 rounded-full hidden md:block -z-10 opacity-10"></div>
+
+    <div class="bg-white shadow-2xl rounded-xl flex flex-col md:flex-row items-stretch min-h-[500px] overflow-visible border border-gray-100">
+      
+      <div class="w-full md:w-1/2 p-8 md:p-16 flex flex-col justify-center items-center md:items-start space-y-8">
+        <h2 class="text-3xl md:text-5xl font-serif font-bold text-blue-900 leading-tight text-center md:text-left uppercase tracking-tight">
+          Our School <span class="text-red-800">Anthem</span>
+        </h2>
+
+        <div class="text-gray-700 text-base md:text-lg leading-relaxed text-center md:text-left font-medium italic">
+          
+          <div class="mb-8 border-l-4 border-red-800/30 pl-4 md:pl-6">
+            <p class="mb-6">
+              Maryhill our pride and joy,<br>
+              In Thika's heart you stand so tall,<br>
+              With spirit strong and hearts ablaze,<br>
+              We answer to the Master's call,<br>
+              Empowered women, stars of light,<br>
+              Walking in truth and holy might.
+            </p>
+
+            <p class="mb-6">
+              In academic heights we soar,<br>
+              In integrity we build our soul,<br>
+              Excellence is our tradition,<br>
+              Service to all remains our goal,<br>
+              Walk in the light, forever bright,<br>
+              Maryhill girls, a glorious sight.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/2 relative p-6 md:p-0">
+        <div class="h-full w-full md:scale-105 md:translate-x-8 md:-translate-y-8 shadow-2xl rounded-2xl overflow-hidden border-8 border-white bg-blue-50">
+          <img 
+            src="pictures/ma9.jpg" 
+            alt="Maryhill Girls Anthem" 
+            class="w-full h-full object-cover min-h-[300px]"
+          />
+          <div class="absolute inset-0 bg-blue-900/5 pointer-events-none"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+ 
+
+
+<style>
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    display: flex;
+    animation: marquee 30s linear infinite;
+  }
+  .club-card-base {
+    flex: 0 0 300px;
+    height: 450px;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  @media (min-width: 768px) {
+    .club-card-base { flex: 0 0 400px; }
+  }
+  .club-card-base:hover { transform: scale(1.02); }
+  .card-img { width: 100%; height: 100%; object-fit: cover; }
+  .card-overlay { 
+    position: absolute; inset: 0; 
+    /* Gradient using Maryhill Navy */
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.95), transparent); 
+  }
+  .card-content {
+    position: absolute; bottom: 2rem; left: 2rem; color: white;
+  }
+  .card-content h4 { font-size: 1.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; }
+  /* Accent line in Maryhill Maroon */
+  .card-content span { display: block; width: 3rem; height: 3px; background: #991b1b; margin-bottom: 0.5rem; }
+</style>
+
+<section class="bg-[#0f172a] py-12 lg:py-24 overflow-hidden relative">
+  <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-red-800/20 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+  <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-900/30 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+
+  <div class="max-w-[1400px] mx-auto px-6 mb-12 relative z-10">
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+      <div class="space-y-4">
+        <div class="flex items-center gap-3 text-red-700 font-black uppercase tracking-[0.2em] text-xs md:text-sm">
+          <span class="w-12 h-1 bg-red-800"></span>
+          Life at Maryhill Girls
+        </div>
+        <h2 class="text-5xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.9]">
+          Our <span class="text-transparent" style="-webkit-text-stroke: 1.5px #991b1b;">Clubs</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative flex overflow-hidden group py-8">
+    <div class="animate-marquee whitespace-nowrap gap-6 lg:gap-10">
+      
+      <div class="club-card-base">
+        <img src="pictures/hockey.jpg" class="card-img" alt="Hockey" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Hockey Club</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/music.jpg" class="card-img" alt="Music" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Music & Choir</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/comp.jpg" class="card-img" alt="ICT" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>ICT Society</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/51.jpeg" class="card-img" alt="Basketball" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Basketball</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/french.jpg" class="card-img" alt="French" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>French Club</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/drama.jpg" class="card-img" alt="Drama" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Drama Club</h4></div>
+      </div>
+
+      <div class="club-card-base">
+        <img src="pictures/hockey.jpg" class="card-img" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Hockey Club</h4></div>
+      </div>
+       <div class="club-card-base">
+        <img src="pictures/music.jpg" class="card-img" />
+        <div class="card-overlay"></div>
+        <div class="card-content"><span></span><h4>Music & Choir</h4></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#0a192f] text-[#f5f5f4] pt-16 pb-8 border-t-4 border-red-800">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-red-800 rounded-lg flex items-center justify-center font-black text-white text-2xl">M</div>
+                    <h2 class="text-2xl font-black tracking-tighter uppercase text-white">MARYHILL <span class="text-red-700">GIRLS</span></h2>
+                </div>
+                <p class="text-stone-400 leading-relaxed font-medium">
+                    To be a center of excellence in the provision of holistic education for the girl child, molding women of integrity and service.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-900/50 flex items-center justify-center hover:bg-red-800 hover:text-white transition-all duration-300 shadow-lg">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-900/50 flex items-center justify-center hover:bg-red-800 hover:text-white transition-all duration-300 shadow-lg">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-900/50 flex items-center justify-center hover:bg-red-800 hover:text-white transition-all duration-300 shadow-lg">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6 border-l-4 border-red-800 pl-3 uppercase tracking-widest">Navigation</h4>
+                <ul class="space-y-4 text-stone-400 font-medium">
+                    <li><a href="index.html" class="hover:text-red-500 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Home</a></li>
+                    <li><a href="about.html" class="hover:text-red-500 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> About Maryhill</a></li>
+                    <li><a href="academics.html" class="hover:text-red-500 transition-colors flex items-center gap-2"><i class="fa-solid fa-chevron-right text-[10px]"></i> Academics</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6 border-l-4 border-red-800 pl-3 uppercase tracking-widest">Resources</h4>
+                <ul class="space-y-4 text-stone-400 font-medium">
+                    <li>
+                        <a href="https://complex-trial.vercel.app" class="hover:text-red-500 transition-colors flex items-center gap-2">
+                            <i class="fa-solid fa-graduation-cap text-[10px]"></i> Assignment Portal
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6 border-l-4 border-red-800 pl-3 uppercase tracking-widest">Contact Us</h4>
+                <div class="text-stone-400 space-y-3 text-sm">
+                    <p class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-red-600"></i> P.O. BOX 10, Thika, Kiambu County, Kenya</p>
+                    <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-red-600"></i> +254 719 718 124</p>
+                    <p class="flex items-center gap-3"><i class="fa-solid fa-envelope text-red-600"></i> info@maryhillgirls.ac.ke</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pt-8 border-t border-blue-900/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-stone-500 font-bold uppercase tracking-widest">
+            <p>&copy; 2026 Maryhill Girls High School. Walk in the Light.</p>
+        </div>
+    </div>
+</footer>
+<button id="backToTop" onclick="scrollToTop()" title="Go to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+// Get the button
+const mybutton = document.getElementById("backToTop");
+
+// When the user scrolls down 300px from the top of the document, show the button
+window.onscroll = function() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // This makes it scroll smoothly
+  });
+}
+</script>
+
+      <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>
